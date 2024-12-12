@@ -119,7 +119,7 @@ class ObjectDetectorHelper(
         var inferenceTime = SystemClock.uptimeMillis()
 
         val imageProcessor = ImageProcessor.Builder()
-            .add(ResizeOp(320, 320, ResizeOp.ResizeMethod.NEAREST_NEIGHBOR))
+            .add(ResizeOp(640, 640, ResizeOp.ResizeMethod.NEAREST_NEIGHBOR))
             .build()
 
         // Preprocess the image and convert it into a TensorImage for detection.
